@@ -31,8 +31,10 @@ export default {
 }
 </script>
 
-<style>
-body {
-  font-family: Helvetica, sans-serif;
-}
+<style lang="scss">
+  #app {
+    h1 {
+      color: #e4393c;
+    }
+  }
 </style>
