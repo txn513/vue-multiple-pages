@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <div class="dd">
-      主页
+  <div>
+    <div class="d">
+      登录页
     </div>
     <img v-bind:src="logoImg">
     <h1>{{ msg }}</h1>

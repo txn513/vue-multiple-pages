@@ -15,17 +15,28 @@ let config = {
   output: {
     path: resolve(__dirname, './dist'),
     filename: '[name].js',
-    publicPath: '/'
+    publicPath: '/newWeb'
   },
   resolve: {
     //配置别名，在项目中可缩减引用路径
     extensions: ['.js', '.vue'],
     alias: {
+      'vue$': 'vue/dist/vue.js',
       assets: join(__dirname,'/src/assets'),
       components: join(__dirname,'/src/components'),
       root: join(__dirname, 'node_modules')
     }
   },
+  // module: {
+  //   loaders: [
+  //     {test: /\.css$/, loader: 'style-loader!css-loader!autoprefixer'},
+  //     {test: /\.less$/, loader: 'style-loader!css-loader!less-loader'},
+  //     {test: /\.vue$/, loader: 'vue-loader'},
+  //     {test: /\.js$/, loader: 'babel-loader?presets=es2015', exclude: /node_modules/ },
+  //     {test: /\.(jpg|png)$/, loader: "url?limit=8192"},
+  //     {test: /\.html$/,loader: "html-loader"},
+  //   ]
+  // },
   module: {
     rules: [
       {

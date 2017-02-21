@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <div class="d">
-      登录页
+  <div>
+    <div class="dd">
+      主页
     </div>
     <img v-bind:src="logoImg">
     <h1>{{ msg }}</h1>
@@ -32,6 +32,7 @@ export default {
 </script>
 
 <style>
+
 body {
   font-family: Helvetica, sans-serif;
 }
